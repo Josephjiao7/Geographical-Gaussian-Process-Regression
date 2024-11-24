@@ -2,7 +2,9 @@
 Geographical Gaussian Process Regression (GGPR): A Spatial Machine Learning Model Based on Spatial Similarity.
 ### Problem Statement
 1.Most existing ML in spatial data can lead to overly optimistic performance and biased errors due to the conflict between spatial autocorrelation and the independent and identically distributed (i.i.d.) assumption.
+
 2.Spatial ML models based on spatial dependence and spatial heterogeneity often require dense samples to satisfy the spatial stationarity assumption, making them inappropriate for small-sample prediction.
+
 3.Few studies offered explainable tools to interpret black-box ML models and capture spatial effects for assisting the spatially decision-making research.
 
 ### Abstract
@@ -11,7 +13,9 @@ This study proposes a new spatial machine learning model called Geographical Gau
 ### Spatial Prediction
 
 
+
 ### Exploratory Spatial Data Analysis 
+
 
 
 ### Reference:

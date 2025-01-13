@@ -1,4 +1,4 @@
-
+<img src="https://github.com/user-attachments/assets/4e54d75f-a571-463d-b449-3ec13186445d" width="1400">
 
 ### Geographical Gaussian Process Regression
 Geographical Gaussian Process Regression (GGPR): A Spatial Machine Learning Model Based on Spatial Similarity.

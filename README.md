@@ -16,6 +16,8 @@ This study proposes a new spatial machine learning model called Geographical Gau
 For spatial prediction, GGPR outperformed traditional GPR family models, RF, and XGBoost across both datasets, with its advantages being particularly evident in small-sample predictions.
 
 The following figure illustrates the impact of noise on the performance of GGPR across two datasets. To ensure model robustness, we recommend setting the noise level for GGPR at or around 0.1.
+<img src="https://github.com/user-attachments/assets/f0074911-0317-444c-a001-dcf1c55e6e4e" width="1000">
+
 
 ### Exploratory Spatial Data Analysis 
 As shown in following figure, by comparing the true spatially varying coefficients, we can observe that both MGWR and GGPR are capable of capturing spatial effects, and their coefficient estimation results are very similar. Although our simulated dataset includes more noise than Li (2024), they are essentially similar in nature. By comparing the ability of traditional machine learning models (GPR, XGBoost, RF, SVM) presented in Li (2024) to capture spatial effects, we observe that GGPR demonstrates significant advantages. This effectively highlights GGPR’s strength as a spatial machine learning model in understanding geographic processes.

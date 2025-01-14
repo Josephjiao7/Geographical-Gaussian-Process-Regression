@@ -21,8 +21,7 @@ The following figure illustrates the impact of noise on the performance of GGPR 
 
 ### Exploratory Spatial Data Analysis 
 As shown in following figure, by comparing the true spatially varying coefficients, we can observe that both MGWR and GGPR are capable of capturing spatial effects, and their coefficient estimation results are very similar. Although our simulated dataset includes more noise than Li (2024), they are essentially similar in nature. By comparing the ability of traditional machine learning models (GPR, XGBoost, RF, SVM) presented in Li (2024) to capture spatial effects, we observe that GGPR demonstrates significant advantages. This effectively highlights GGPR’s strength as a spatial machine learning model in understanding geographic processes.
-
-
+<img src="https://github.com/user-attachments/assets/a2b88e33-97f6-40f1-9c3f-7d9f91ecb62d" width="1000">
 
 
 ### Reference:

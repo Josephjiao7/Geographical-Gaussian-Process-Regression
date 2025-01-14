@@ -1,5 +1,7 @@
 ### Geographical Gaussian Process Regression
-Geographical Gaussian Process Regression (GGPR): A Spatial Machine Learning Model Based on **Spatial Similarity**.
+Geographical Gaussian Process Regression (GGPR): A Spatial Machine Learning Model Based on **Spatial Similarity**:
+
+defined as [A-Xing Zhu et al., (2018)](https://doi.org/10.1080/19475683.2018.1534890): *"The more similar geographic configurations of two points (areas), the more similar the values (processes) of the target variable at these two points (areas)".*
 
 GGPR has two functions: **spatial prediction** and **exploratory spatial data analysis (ESDA)**. For spatial prediction, GGPR uses spatial similarity as a kernel function to calibrate the GPR model and then predicts the values of unknown observations. To perform ESDA, we build on the spatial prediction function by adding a Matern kernel with spatial coordinates to facilitate the use of GeoShapley, allowing us to explore spatial effects and interpret the model’s results.
 
@@ -16,7 +18,7 @@ GGPR has two functions: **spatial prediction** and **exploratory spatial data an
 This study proposes a new spatial machine learning model called Geographical Gaussian Process Regression (GGPR). GGPR is extended from Gaussian Process Regression (GPR) by using the principle of spatial (geographic) similarity for calibration, and it is designed to conduct spatial prediction and exploratory spatial data analysis (ESDA). GGPR addresses several key challenges in spatial machine learning. First, as a probabilistic model, GGPR avoids the conflict between spatial autocorrelation and the assumption of independent and identically distributed (i.i.d.), thus enhancing the model’s objectivity and reliability in spatial prediction. Second, GGPR is suitable for small-sample prediction that most existing models can hardly handle. Finally, integrated with GeoShapley, GGPR is an explainable model can measure spatial effects and explain the outcomes. Evaluated on two distinct datasets, GGPR demonstrates superior predictive performance compared to other popular machine learning models across various sampling ratios, with its advantage becoming particularly pronounced at smaller sampling ratios. As an ESDA model, GGPR demonstrates enhanced accuracy, better computational efficiency, and a comparable ability to measure spatial effects against both Multiscale Geographically Weighted Regression (MGWR) and Geographical Random Forests (GRF). In short, GGPR offers spatial data scientists a new method for predicting and exploring complex geographical processes. 
 
 ### Spatial Prediction
-For spatial prediction, GGPR outperformed traditional GPR family models, RF, and XGBoost across both datasets, with its advantages being particularly evident in small-sample predictions.
+For spatial prediction, GGPR outperformed traditional GPR family models, Random Forests (RF), and eXtreme Gradient Boosting (XGBoost) across both datasets, with its advantages being particularly evident in small-sample predictions.
 
 The following figure illustrates the impact of noise on the performance of GGPR across two datasets. To ensure model robustness, we recommend setting the noise level for GGPR at or around 10<sup>-1</sup> (0.1).
 <img src="https://github.com/user-attachments/assets/f0074911-0317-444c-a001-dcf1c55e6e4e" width="1000">
@@ -37,4 +39,11 @@ We presented the explainable results for the referendum dataset.
 Two datasets were used to evaluate the performance of GGPR: ride-hailing service demand in Chicago [(Ziqi Li, 2022)](https://github.com/Ziqi-Li/SHAP_spatial_data_paper) and the referendum on EU membership in the UK [(Evan Odell, 2020)](https://cran.r-project.org/src/contrib/Archive/parlitools/). 
 
 ### Reference:
-Zhenzhi Jiao & Ran Tao (2025). Geographical Gaussian Process Regression (GGPR): A Spatial Machine Learning Model Based on Spatial Similarity. Geographical Analysis. (Accepted)
+To cite this paper: Zhenzhi Jiao & Ran Tao (2025). Geographical Gaussian Process Regression (GGPR): A Spatial Machine Learning Model Based on Spatial Similarity. Geographical Analysis. (Accepted)
+
+Zhu, A. X., Lu, G., Liu, J., Qin, C. Z., & Zhou, C. (2018). Spatial prediction based on Third Law of Geography. Annals of GIS, 24(4), 225-240.
+
+Li, Z. (2024). GeoShapley: A Game Theory Approach to Measuring Spatial Effects in Machine Learning Models. Annals of the American Association of Geographers, 1-21.
+
+Li, Z. (2022). Extracting spatial effects from machine learning model using local interpretation method: An example of SHAP and XGBoost. Computers, Environment and Urban Systems, 96, 101845.
+

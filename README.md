@@ -1,4 +1,4 @@
-<img src="https://github.com/user-attachments/assets/4e54d75f-a571-463d-b449-3ec13186445d" width="1000">
+<img src="https://github.com/user-attachments/assets/c756fe68-2060-4135-973a-85f98bc84c61" width="1000">
 
 ### Geographical Gaussian Process Regression
 Geographical Gaussian Process Regression (GGPR): A Spatial Machine Learning Model Based on Spatial Similarity.
@@ -20,9 +20,16 @@ The following figure illustrates the impact of noise on the performance of GGPR 
 
 
 ### Exploratory Spatial Data Analysis 
-As shown in following figure, by comparing the true spatially varying coefficients, we can observe that both MGWR and GGPR are capable of capturing spatial effects, and their coefficient estimation results are very similar. Although our simulated dataset includes more noise than Li (2024), they are essentially similar in nature. By comparing the ability of traditional machine learning models (GPR, XGBoost, RF, SVM) presented in Li (2024) to capture spatial effects, we observe that GGPR demonstrates significant advantages. This effectively highlights GGPR’s strength as a spatial machine learning model in understanding geographic processes.
+As shown in following figure, by comparing the true spatially varying coefficients, we can observe that both MGWR and GGPR are capable of capturing spatial effects, and their coefficient estimation results are very similar. Although our simulated dataset includes more noise than [Ziqi Li (2024)](https://github.com/Ziqi-Li/geoshapley), they are essentially similar in nature. By comparing the ability of traditional machine learning models (GPR, XGBoost, RF, SVM) presented in [Ziqi Li (2024)](https://github.com/Ziqi-Li/geoshapley) to capture spatial effects, we observe that GGPR demonstrates significant advantages. This effectively highlights GGPR’s strength as a spatial machine learning model in understanding geographic processes.
 <img src="https://github.com/user-attachments/assets/a2b88e33-97f6-40f1-9c3f-7d9f91ecb62d" width="1000">
 
+We presented the explainable results for the referendum dataset.
+<img src="https://github.com/user-attachments/assets/32926b16-89ec-4d44-b763-5dc7b82c19d7" width="1000">
+<img src="https://github.com/user-attachments/assets/3a66e4b5-3d37-4762-8d23-a9041c3b9d99" width="1000">
+<img src="https://github.com/user-attachments/assets/bd258063-d4ca-4499-be9c-7f95ee3a0ea0" width="1000">
+
+### Dataset
+Two datasets were used to evaluate the performance of GGPR: ride-hailing service demand in Chicago [(Ziqi Li, 2022)](https://github.com/Ziqi-Li/SHAP_spatial_data_paper) and the referendum on EU membership in the UK [(Evan Odell, 2020)](https://cran.r-project.org/src/contrib/Archive/parlitools/). 
 
 ### Reference:
 Zhenzhi Jiao & Ran Tao (2025). Geographical Gaussian Process Regression (GGPR): A Spatial Machine Learning Model Based on Spatial Similarity. Geographical Analysis. (Accepted)

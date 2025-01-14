@@ -1,7 +1,7 @@
 ### Geographical Gaussian Process Regression
-Geographical Gaussian Process Regression (GGPR): A Spatial Machine Learning Model Based on Spatial Similarity.
+Geographical Gaussian Process Regression (GGPR): A Spatial Machine Learning Model Based on **Spatial Similarity**.
 
-GGPR has two functions: spatial prediction and ESDA. For spatial prediction, GGPR uses spatial similarity as a kernel function to calibrate the GPR model and then predicts the values of unknown observations. To perform ESDA, we build on the spatial prediction function by adding a Matern kernel with spatial coordinates to facilitate the use of GeoShapley, allowing us to explore spatial effects and interpret the model’s results.
+GGPR has two functions: **spatial prediction** and **exploratory spatial data analysis (ESDA)**. For spatial prediction, GGPR uses spatial similarity as a kernel function to calibrate the GPR model and then predicts the values of unknown observations. To perform ESDA, we build on the spatial prediction function by adding a Matern kernel with spatial coordinates to facilitate the use of GeoShapley, allowing us to explore spatial effects and interpret the model’s results.
 
 <img src="https://github.com/user-attachments/assets/c756fe68-2060-4135-973a-85f98bc84c61" width="1000">
 

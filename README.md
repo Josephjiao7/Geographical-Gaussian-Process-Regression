@@ -1,7 +1,8 @@
-<img src="https://github.com/user-attachments/assets/c756fe68-2060-4135-973a-85f98bc84c61" width="1000">
-
 ### Geographical Gaussian Process Regression
 Geographical Gaussian Process Regression (GGPR): A Spatial Machine Learning Model Based on Spatial Similarity.
+
+<img src="https://github.com/user-attachments/assets/c756fe68-2060-4135-973a-85f98bc84c61" width="1000">
+
 ### Problem Statement
 1.Most existing ML in spatial data can lead to overly optimistic performance and biased errors due to the conflict between spatial autocorrelation and the independent and identically distributed (i.i.d.) assumption.
 
@@ -20,6 +21,8 @@ The following figure illustrates the impact of noise on the performance of GGPR 
 
 
 ### Exploratory Spatial Data Analysis 
+It is important to note that when used as an ESDA model, the GGPR model is employed to predict its own data (in-sample prediction) to maximally learn spatial patterns and capture geographic phenomena, a practice similar to that of MGWR and GRF. To avoid the over-fitting, we employed five-fold cross validation to train GGPR to get the best parameters. Then, we reintroduced the entire dataset into the model for in-sample prediction to fit the model, and subsequently used GeoShapley Python package to explain the results, obtaining the distribution of GeoShapley values.
+
 As shown in following figure, by comparing the true spatially varying coefficients, we can observe that both MGWR and GGPR are capable of capturing spatial effects, and their coefficient estimation results are very similar. Although our simulated dataset includes more noise than [Ziqi Li (2024)](https://github.com/Ziqi-Li/geoshapley), they are essentially similar in nature. By comparing the ability of traditional machine learning models (GPR, XGBoost, RF, SVM) presented in [Ziqi Li (2024)](https://github.com/Ziqi-Li/geoshapley) to capture spatial effects, we observe that GGPR demonstrates significant advantages. This effectively highlights GGPR’s strength as a spatial machine learning model in understanding geographic processes.
 <img src="https://github.com/user-attachments/assets/a2b88e33-97f6-40f1-9c3f-7d9f91ecb62d" width="1000">
 

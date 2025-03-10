@@ -39,7 +39,7 @@ We presented the explainable results for the referendum dataset.
 Two datasets were used to evaluate the performance of GGPR: ride-hailing service demand in Chicago [(Ziqi Li, 2022)](https://github.com/Ziqi-Li/SHAP_spatial_data_paper) and the referendum on EU membership in the UK [(Evan Odell, 2020)](https://cran.r-project.org/src/contrib/Archive/parlitools/). 
 
 ### Reference:
-To cite this paper: Zhenzhi Jiao & Ran Tao (2025). Geographical Gaussian Process Regression (GGPR): A Spatial Machine Learning Model Based on Spatial Similarity. Geographical Analysis. (Accepted)
+To cite this paper: Zhenzhi Jiao & Ran Tao (2025). Geographical Gaussian Process Regression (GGPR): A Spatial Machine Learning Model Based on Spatial Similarity. Geographical Analysis.  https://doi.org/10.1111/gean.12423
 
 Zhu, A. X., Lu, G., Liu, J., Qin, C. Z., & Zhou, C. (2018). Spatial prediction based on Third Law of Geography. Annals of GIS, 24(4), 225-240.
 
